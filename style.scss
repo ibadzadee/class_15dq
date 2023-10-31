@@ -1,0 +1,84 @@
+@import "mixin";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    max-width: 1400px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+section{
+    width: 100%;
+    padding: 30px;
+    background-color:aliceblue;
+    .section-center{
+        @include display;
+        gap: 50px;
+        flex-direction: column;
+        .text{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .design{
+            ul{
+                list-style: none;
+                @include display;
+                gap: 20px;
+                li{
+                    font-size: 20px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        &:hover{
+                            border-bottom: 1px solid green;
+                        }
+                    }
+
+                }
+            }
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            gap: 50px;
+            
+            div{
+                @include display(center, flex-start);
+                flex-direction: column;
+                gap: 20px;
+                box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.2);
+                border-radius: 20px;
+                background-color: white;
+                padding: 20px 20px;
+                position: relative;
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+
+                }
+                .position{
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    background-color: blue;
+                    color: white;
+                    font-size: 20px;
+                    padding: 5px 5px;
+                    border-radius: 10px;
+                }
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}

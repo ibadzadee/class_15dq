@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0px 20px;
+  margin: auto;
+}
+
+section {
+  width: 100%;
+  padding: 30px;
+  background-color: aliceblue;
+}
+section .section-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+}
+section .section-center .text {
+  font-size: 40px;
+  font-weight: 700;
+}
+section .section-center .design ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+section .section-center .design ul li {
+  font-size: 20px;
+}
+section .section-center .design ul li a {
+  text-decoration: none;
+  color: black;
+}
+section .section-center .design ul li a:hover {
+  border-bottom: 1px solid green;
+}
+section .section-center .cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 50px;
+}
+section .section-center .cards div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px 20px;
+  position: relative;
+}
+section .section-center .cards div h3 {
+  font-size: 30px;
+}
+section .section-center .cards div p {
+  font-size: 20px;
+}
+section .section-center .cards div .position {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+section .section-center .cards div img {
+  width: 300px;
+  height: 300px;
+}/*# sourceMappingURL=style.css.map */
